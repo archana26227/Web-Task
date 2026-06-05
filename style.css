@@ -223,9 +223,11 @@ body{
     text-align: center;
 }
 .section4{
-    background-color:#eff3ff ;
     padding-top:50px;
     overflow:hidden;
+}
+.stories{
+     background-color:#eff3ff ;
 }
 #large{
     font-size: 14px;
@@ -305,6 +307,7 @@ body{
     height:300px;
     border-radius: 20px;
     overflow:hidden;
+    margin-bottom: 70px;
 }
 .map-image{
     width:100%;
@@ -341,10 +344,59 @@ body{
     margin-bottom:10px;
     font-size: 16px;
 }
-.btn-success{
+.form-btn{
     background-color: #006b54;
     width:400px;
     border-radius: 20px;
     color: white;
     margin-left:20px;
+}
+/* footer-section */
+.footer-section{
+    padding-top:70px;
+    padding-left: 30px;
+}
+.footer-wrapper{
+    background-color:#eff3ff;
+}
+.footer-logo{
+    color:#006b54;
+    display: flex;
+    gap:20px;
+}
+.footer-title{
+    font-size: 14px;
+    font-weight: bold;
+    color:#121c21;
+    padding-right: 50px;
+}
+.footer-section h2,
+.footer-section h4{
+    padding-bottom: 20px;
+}
+.footer-section p{
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+.footer-section{
+    border-bottom: 2px solid #e3e9fb;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.main-footer{
+    margin:20px 20px;
+}
+#address{
+    font-size: 12px;
+    margin-right:20px;
+}
+.extra{
+    font-size:12px;
+    display:flex;
+    gap:50px;
+    font-weight: bold;
+}
+.main-footer{
+   display: flex;
+   gap:600px;
 }
