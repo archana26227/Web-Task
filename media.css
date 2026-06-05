@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    .text h2{
+    font-size:36px;
+    }
+}
+@media(max-width:768px){
+    .nav{
+        margin-bottom:0;
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+        z-index:1000;
+        background-color:white;   
+    }
+    .btn-success{
+        margin-top:2px;
+    }
+    .text{
+        margin-top: 20px;
+        padding:0 10px;
+    }
+    body{
+        padding-bottom:60px;
+    }
+   .services-part,
+   .services-part2{
+      padding:20px;
+      min-height:150px;
+    }
+    .services,
+    .services2{
+        min-height:auto;
+        display:flex;
+        align-items:center;
+        padding: 20px;;
+    }
+}
