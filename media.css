@@ -13,6 +13,10 @@
         z-index:1000;
         background-color:white;   
     }
+    .nav-link{
+        padding:5px;
+        font-size:12px;
+    }
     .btn-success{
         margin-top:2px;
     }
