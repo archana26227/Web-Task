@@ -329,6 +329,7 @@ body{
      border-radius: 30px;
      background-color:#eff3ff;
      max-width:550px;
+     width:100%;
      margin:40px;
 }
 .form-title{
@@ -342,6 +343,7 @@ body{
     border: none;
     margin-bottom: 20px;
     width:100%;
+    max-width: 450px;
 }
 .form-body{
     padding-bottom: 30px;
@@ -352,15 +354,16 @@ body{
 }
 .form-btn{
     background-color: #006b54;
+    max-width:450px;
     width:100%;
     border-radius: 20px;
     color: white;
-    margin-left:20px;
 }
 /* footer-section */
 .footer-section{
     padding-top:70px;
     padding-left: 30px;
+    gap:60px;
 }
 .footer-wrapper{
     background-color:#eff3ff;
@@ -406,4 +409,10 @@ body{
     display:flex;
     gap:50px;
     font-weight: bold;
+}
+.error{
+    color:red;
+    display: block;
+    margin:20px;
+    font-size:14px;
 }

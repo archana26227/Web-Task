@@ -125,8 +125,8 @@
                 <p>Comprehensive care tailored to your unique needs, from routine maintenance to<br> transformative smile design.</p> 
                 <a href="#" class="explore">Explore All Services <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="col-lg-4 col-12 d-flex align-items-center gx-4">
-                <div class="card gx-4" style="width: 24rem;">
+            <div class="col-lg-4 col-md-6 col-12 d-flex align-items-center gx-4">
+                <div class="card" style="width: 24rem;">
                     <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOKvrYMR1mmMWxLIRsilr4eXPWGMEjyos080SBBfiWR3RIskhqxo1mkc6W1kjSzG21gRYZB5gm7-2zh5Anli_vlxGk30b1B8uXSa1WojfKzXsZ20xkUQmQD2p9BoFMQsXgh90iC6PzbqhYnPdWgq-kazJa5dYdRUvxo8xNyfLY2q9JZARNHY8L2Z3OKSjUJWqWBgCgFTQtItfoEqpsb2yrmN7fqe9Y619gQ7wiEZ7VEVoxWovCD962Ibg7gxpJgvYV8VtoATCdV91I" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Routine Check-ups</h5>
@@ -135,7 +135,7 @@
                         </div>
                 </div>
             </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="card" style="width: 24rem;">
                         <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuey2ONStSRVqlELoeuHU2RjVkoMX1RNhxo9tATDAZ2aZQ1SqmDf4Bb3TZ43MED4iflOIbjlNsmlQ3-bQREWCZTmRQze4OI237Y7B7Zxj5GKC0_FTAevN95Y_4VajXgAUFxAl9uMoMu8xJddvPMAoCx3HE8hMcickyvLWriySgCG_VdGVMqGqH0LYRZuC6TDWjkbR9Siee7d-OGpZmmC9wAV6T-aTeS5I2FFO2BOeE3r-E6uhle1CcA8su03qZF5XDf04UFGiuMR9-" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -145,8 +145,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-12">
-                    <div class="card col-lg-4 col-12" style="width: 24rem;">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card" style="width: 24rem;">
                     <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQnT-yTrmG1o7Nr9XQ_kNBvylSJtXwFrUmyzBYq1vv_qQcnOX8fLB6HbzsGTfzDiMpZzeax9O4eMGrNohtX9NLzRijtHZFF9hM42jtZVFpu9uG-aI4C-yP4aJgOSUcSMIUMuxb3kKYjNrWKoIJT_f8MvISshmm1MwZCOTDmjY5GvajCJvivhHt9R33w2UL83y7q3fBv5RAtExGAdCjdH9gxqOblDd-rj58R6JloE57pK9C1rt6dLCp7aEVjPEnJN0oZ2Tt1ZeV5_Hx" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Dental Implants</h5>
@@ -249,19 +249,23 @@
             </div>
             </div>
             <div class="col-lg-6 col-12">
-                <form class="form-section">
+                <form class="form-section" id="contactForm">
                     <div class="form-title">
                     <p>Send a Inquiry</p>
                     <div class="form-body">
                     <p class="form-text">Full Name:</p>
-                    <input type="text" class="input py-3 px-2" placeholder="E.g.Micheal Chen"><br>
+                    <input type="text" id="fullname" class="input py-3 px-2" placeholder="E.g.Micheal Chen">
+                    <small class="error" id="nameError"></small>
                     <p class="form-text">Email Address:</p>
-                    <input type="email" class="input py-3 px-2" placeholder="E.g.abc@gmail.com"><br>
+                    <input type="email" id="email" class="input py-3 px-2" placeholder="E.g.abc@gmail.com">
+                    <small class="error" id="emailError"></small>
                     <p class="form-text">Contact No:</p>
-                    <input type="text" class="input py-3 px-2" placeholder="E.g.0987654321"><br>
+                    <input type="text" id="phone" class="input py-3 px-2" placeholder="E.g.0987654321">
+                    <small class="error" id="phoneError"></small>
                     <p class="form-text">Your Message:</p>
-                    <textarea class="input py-2" row="3"></textarea><br>
-                    <button type="button" class="btn btn-success form-btn">Send Secure Inquiry</button>
+                    <textarea class="input py-2" id="message" rows="3"></textarea>
+                    <small class="error" id="messageError"></small>
+                    <button type="submit" class="btn btn-success form-btn">Send Secure Inquiry</button>
                     </div>
                     </div>
                 </form>
@@ -270,10 +274,10 @@
     </section>
     <!-- Footer -->
     <footer>
-        <div class="footer-wrapper container-fluid px-0">
+        <div class="footer-wrapper container-fluid">
             <div class="footer-section d-flex">
-                <div class="row gx-5 gy-4">
-                        <div class="col-lg-3 col-md-6 col-12">
+                <div class="row justify-content-between">
+                        <div class="col-lg-3 col-12">
                             <h3>Lumina Dental</h3><br>
                             <p>Clinical precision meets empathetic care.<br> 
                                 Transforming lives one smile at a time.</p>
@@ -282,21 +286,21 @@
                             <i class="fa-regular fa-envelope fa-2x"></i>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
+                        <div class="col-lg-3 col-12">
                             <h4 class="footer-title">Oral Services</h4>
                             <p>Preventive Care</p>
                             <p>Cosmetic Design</p>
                             <p>Dental Implants</p>
                             <p>Oral Surgery</p>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
+                        <div class="col-lg-3 col-12">
                             <h4 class="footer-title">Clinic</h4>
                             <p>Our Specialists</p>
                             <p>Office Gallery</p>
                             <p>Insurance & Financing</p>
                             <p>Patient Portal</p>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-12">
+                        <div class="col-lg-3 col-12">
                             <h4 class="footer-title">Contact Us</h4>
                             <p>123 Brightness Way, Suite 400</p>
                             <p>Modern City, MC 45678</p>
@@ -318,7 +322,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 </html>
