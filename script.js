@@ -39,5 +39,5 @@ document.getElementById("contactForm").addEventListener("submit" ,function(e){
     if(valid){
         alert("Form Submitted Succesfully");
     }
-
+    
 });
