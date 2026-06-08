@@ -33,6 +33,42 @@ body{
     background-color: #006b54;
     color: white;
 }
+.popup{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+.popup:target{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color:#eff3ff;
+    padding: 20px;
+    border-radius:10px;
+}
+.normal{
+    padding:10px;
+    border-radius: 20px;
+    border:none;
+}
+#cancel{
+    font-size:25px;
+    color:#006b54
+}
+#book{
+    background-color:#006b54;
+    color:white;
+    margin-left:50px;
+    padding:10px 15px;
+}
+.title{
+    display: flex;
+    gap:20px;
+}
 /* Home */
 .text{
     max-width:650px;
