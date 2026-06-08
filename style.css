@@ -260,6 +260,17 @@ body{
     font-family: 'inter','Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     font-size: 16px;
 }
+.card-slider{
+    display:flex;
+    overflow:auto;
+    scroll-behavior: smooth;
+    padding:20px;
+    gap:20px;
+}
+.card{
+    flex-shrink: 0;
+    max-width:350px;
+}
 .link{
     margin:20px;
     text-decoration: none;
