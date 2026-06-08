@@ -16,6 +16,9 @@
     .nav-link{
         padding:5px;
         font-size:12px;
+        margin-top:10px;
+        display: flex;
+        align-items: center;
     }
     .hide-mobile{
     display:none;

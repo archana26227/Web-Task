@@ -36,7 +36,7 @@ body{
 /* Home */
 .text{
     max-width:650px;
-    margin-top: 200px;
+    margin-top: 180px;
     font-size: 18px;
 }
 .text span{
@@ -436,7 +436,7 @@ body{
     line-height: 1.5;
 }
 .main-footer{
-    margin:20px;
+    margin-top:20px;
     display: flex;
     gap:20px;
     flex-wrap: wrap;
@@ -451,7 +451,8 @@ body{
     padding:70px 0 70px 20px;
 }
 hr{
-    border-bottom: 2px solid #e3e9fb;
+    border: 2px solid #d7e1fe;
+    margin:0;
 }
 .extra{
     font-size:12px;
