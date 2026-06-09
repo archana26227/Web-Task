@@ -53,27 +53,6 @@ document.getElementById("explorebtn").addEventListener("click",function (e){
     
 });
 
-// document.getElementById("next-btn").addEventListener("click",function (e){
-
-//     e.preventDefault();
-//     document.getElementById("stories")
-//     .scrollBy({
-//         left:370,
-//         behavior:"smooth",
-//     });
-
-// });
-
-// document.getElementById("first-btn").addEventListener("click",function (e){
-
-//     e.preventDefault();
-//     document.getElementById("stories")
-//     .scrollBy({
-//         left:-370,
-//         behavior:"smooth",
-//     });
-// });
-
 let stories=document.getElementById("stories");
 
 setInterval(function(){

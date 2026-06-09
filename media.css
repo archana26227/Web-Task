@@ -2,7 +2,7 @@
     .text h2{
     font-size:36px;
     }
-    .nav{
+    /* .nav{
         margin-bottom:0;
         position:fixed;
         bottom:0;
@@ -19,8 +19,7 @@
         align-items: center;
     }
     .hide-mobile{
-        display:none;
-    }
+        display:none; */
     .btn-success{
         margin-top:2px;
     }
