@@ -53,23 +53,55 @@ document.getElementById("explorebtn").addEventListener("click",function (e){
     
 });
 
-document.getElementById("next-btn").addEventListener("click",function (e){
+// document.getElementById("next-btn").addEventListener("click",function (e){
 
-    e.preventDefault();
-    document.getElementById("stories")
-    .scrollBy({
-        left:370,
-        behavior:"smooth",
-    });
+//     e.preventDefault();
+//     document.getElementById("stories")
+//     .scrollBy({
+//         left:370,
+//         behavior:"smooth",
+//     });
 
-});
+// });
 
-document.getElementById("first-btn").addEventListener("click",function (e){
+// document.getElementById("first-btn").addEventListener("click",function (e){
 
-    e.preventDefault();
-    document.getElementById("stories")
-    .scrollBy({
-        left:-370,
-        behavior:"smooth",
-    });
-});
+//     e.preventDefault();
+//     document.getElementById("stories")
+//     .scrollBy({
+//         left:-370,
+//         behavior:"smooth",
+//     });
+// });
+
+let stories=document.getElementById("stories");
+
+setInterval(function(){
+    if(stories.scrollLeft+stories.clientWidth>=stories.scrollWidth-10){
+        stories.scrollTo({
+            left:0,
+            behavior:"smooth",
+        });
+    }else{
+        stories.scrollBy({
+            left:370,
+            behavior:"smooth",
+        });
+    }
+},1000);
+
+let cards=document.getElementById("section-card");
+
+setInterval(function(){
+    if(cards.scrollLeft+cards.clientWidth>=cards.scrollWidth-10){
+        cards.scrollTo({
+            left:0,
+            behavior:"smooth",
+        });
+    }else{
+        cards.scrollBy({
+            left:370,
+            behavior:"smooth",
+        });
+    }
+},2000);
