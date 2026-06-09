@@ -56,7 +56,7 @@
     .button{
         display: flex;
         flex-direction: column;
-        gap:none;
+        gap:5px;
         margin-bottom:10px;
     }
     .doctor-image img{

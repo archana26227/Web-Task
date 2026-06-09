@@ -41,3 +41,35 @@ document.getElementById("contactForm").addEventListener("submit" ,function(e){
     }
     
 });
+
+document.getElementById("explorebtn").addEventListener("click",function (e){
+
+    e.preventDefault();
+    document.getElementById("section-card")
+    .scrollBy({
+        left:400,
+        behavior:"smooth",
+    });
+    
+});
+
+document.getElementById("next-btn").addEventListener("click",function (e){
+
+    e.preventDefault();
+    document.getElementById("stories")
+    .scrollBy({
+        left:370,
+        behavior:"smooth",
+    });
+
+});
+
+document.getElementById("first-btn").addEventListener("click",function (e){
+
+    e.preventDefault();
+    document.getElementById("stories")
+    .scrollBy({
+        left:-370,
+        behavior:"smooth",
+    });
+});

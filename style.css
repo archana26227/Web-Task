@@ -107,6 +107,11 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.button{
+    gap:24px;
+    margin-top:24px;
+    margin-bottom: 24px;
+}
 /* section 2 */
 .text h2{
     font-size: 56px;
@@ -356,6 +361,44 @@ body{
     margin-bottom: 80px;
     min-height:300px;
     transition:0.3s ease;
+    flex-shrink: 0;
+    max-width:350px;
+}
+.stories-section{
+    position:relative;
+}
+#next-btn{
+    font-size:14px;
+    position:absolute;
+    top:50%;
+    right:-5px;
+    transform: translateY(-50%);
+    border:none;
+    border-radius: 50px;
+    color:white;
+    cursor: pointer;
+    background-color: #006b54;
+    width:50px;
+    height:50px;
+}
+#first-btn{
+    font-size:14px;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    border:none;
+    border-radius: 50px;
+    color:white;
+    cursor: pointer;
+    background-color: #006b54;
+    width:50px;
+    height:50px;
+}
+.stories-slider{
+    display: flex;
+    overflow-x: auto;
+    gap:20px;
+    scroll-behavior: smooth;
 }
 .profile:hover{
    transform:translateY(-8px);
