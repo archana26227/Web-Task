@@ -583,7 +583,7 @@ html{
 }
 .float-img{
     position: fixed;
-    right:20px;
+    right:50px;
     bottom:20px;
     z-index:999;
     color:white;
