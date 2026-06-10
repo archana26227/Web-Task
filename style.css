@@ -88,7 +88,7 @@ body{
 /* Home */
 .text{
     max-width:650px;
-    margin-top:100px;
+    margin-top:165px;
     font-size: 18px;
 }
 .text span{
@@ -118,7 +118,7 @@ body{
     max-width: 500px;
     border-radius: 20px;
     object-fit: cover;
-    margin-top: 50px;
+    margin-top: 115px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -594,7 +594,6 @@ html{
     width:60px;
     height:60px;
     transition: transform 0.3s ease;
-    border-radius: 50%;
 }
 .float-img img:hover{
     transform:scale(1.1);
@@ -607,7 +606,3 @@ html{
     display: flex;
     align-items: center;
 }
-
-
-/* Head.html */
-
