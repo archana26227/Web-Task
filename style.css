@@ -6,10 +6,13 @@ body{
     background-color: #F9F9FF;
     z-index: 1000;
 }
+.navbar{
+    border-bottom: 2px solid #e1e9ff;
+}
 .nav-link{
-    margin:0 20px;
+    margin:0 10px;
     color: black;
-    margin-right:10px;
+    margin-right: 20px;
 }
 .nav-link:hover{
     color: #006b54;
@@ -23,15 +26,28 @@ body{
     font-weight: 550;
     margin-bottom: 20px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:35px
+}
+.offcanvas-body{
+    background-color: #eff3ff;
 }
 .nav{
     margin-bottom: 20px;
 }
+.nav-link1{
+    text-decoration: none;
+    padding:20px;
+    color:#006b54;
+}
+.nav-item1{
+    padding:10px 0 10px 0;
+}
 .btn-success{
     padding: 10px 12px;
-    margin:0 10px;
+    margin:10px 10px;
     background-color: #006b54;
     color: white;
+    margin-right:5px;
 }
 .popup{
     display: none;
@@ -72,7 +88,7 @@ body{
 /* Home */
 .text{
     max-width:650px;
-    margin-top: 180px;
+    margin-top:100px;
     font-size: 18px;
 }
 .text span{
@@ -102,7 +118,7 @@ body{
     max-width: 500px;
     border-radius: 20px;
     object-fit: cover;
-    margin-top: 130px;
+    margin-top: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -266,15 +282,16 @@ body{
     font-size: 16px;
 }
 .card-slider{
+    overflow:hidden;
+}
+.slide{
     display:flex;
-    overflow:auto;
-    scroll-behavior: smooth;
-    padding:20px;
     gap:20px;
+    width:max-content;
 }
 .card{
     flex-shrink: 0;
-    max-width:350px;
+    width: 24rem;
 }
 .link{
     margin:20px;
@@ -364,6 +381,9 @@ body{
     flex-shrink: 0;
     max-width:350px;
 }
+.stories-section{
+    overflow:hidden;
+}
 /* .stories-section{
     position:relative;
 }
@@ -396,9 +416,8 @@ body{
 } */
 .stories-slider{
     display: flex;
-    overflow-x: auto;
     gap:20px;
-    scroll-behavior: smooth;
+    width: max-content;
 }
 .profile:hover{
    transform:translateY(-8px);
@@ -540,9 +559,13 @@ body{
     row-gap:30px;
     padding:70px 0 70px 20px;
 }
-hr{
-    border: 2px solid #d7e1fe;
-    margin:0;
+#tel{
+    color: #006b54;
+    font-weight: bold;
+}
+#mail{
+    color:#006b54;
+    font-weight: bold;
 }
 .extra{
     font-size:12px;
@@ -558,3 +581,33 @@ hr{
 html{
     scroll-behavior: smooth;
 }
+.float-img{
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    z-index:999;
+    color:white;
+    border-radius:50%;
+}
+.float-img img{
+    object-fit: cover;
+    width:60px;
+    height:60px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+.float-img img:hover{
+    transform:scale(1.1);
+}
+#offcanvasNavbar{
+    width: 75%;
+    max-width: 280px;
+}
+.offcanvas-header{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Head.html */
+
