@@ -1,13 +1,14 @@
+// contact form validation and whatsapp page 
 document.getElementById("contactForm").addEventListener("submit" ,function(e){
 
     e.preventDefault();
 
-    let fullname=document.getElementById("fullname").value.trim();
+    let fullname=document.getElementById("fullname").value.trim();  //trim is used to avoid the spaces
     let email=document.getElementById("email").value.trim();
     let phone=document.getElementById("phone").value.trim();
     let message=document.getElementById("message").value.trim();
 
-    document.getElementById("nameError").innerText="";
+    document.getElementById("nameError").innerText="";    //innertext is used to get and change the element by accessing it from the html file
     document.getElementById("emailError").innerText="";
     document.getElementById("phoneError").innerText="";
     document.getElementById("messageError").innerText="";
@@ -35,16 +36,56 @@ document.getElementById("contactForm").addEventListener("submit" ,function(e){
         document.getElementById("messageError").innerText="Message cannot be empty";
         valid=false;
     }
+    if (valid){
+        e.preventDefault();
 
-    if(valid){
-        alert("Form Submitted Succesfully");
-    }
+    let name=document.getElementById("fullname").value;
+    let email=document.getElementById("email").value;     //value is used to get the data that user will enter
+    let phone=document.getElementById("phone").value;
+    let message=
+    `Hello Lumina Dental,
     
-});
+    Name: ${name}
+    email: ${email}
+    phone: ${phone}
+    
+I would like to book an Appointment.`;
 
+    let whatsappURL="https://wa.me/918830101455?text=" +
+    encodeURIComponent(message);
+
+    window.open(whatsappURL,"_blank");   //_blank is used to open a new tab instead of opening in a current tab
+    }
+});
+    
+// only whatsapp page code
+// document.getElementById("contactForm").addEventListener("submit",function(e){
+
+//     e.preventDefault();
+
+//     let name=document.getElementById("fullname").value;
+//     let email=document.getElementById("email").value;
+//     let phone=document.getElementById("phone").value;
+//     let message=
+//     `Hello Lumina Dental,
+    
+//     Name: ${name}
+//     email: ${email}
+//     phone: ${phone}
+    
+// I would like to book an Appointment.`;
+
+//     let whatsappURL="https://wa.me/918830101455?text=" +
+//     encodeURIComponent(message);
+
+//     window.open(whatsappURL,"_blank");
+// });
+
+
+// button to scroll left when we click on it that is for the cards
 document.getElementById("explorebtn").addEventListener("click",function (e){
 
-    e.preventDefault();
+    e.preventDefault();       //this is used to make the browser stop doing of your own and only run the javascript code
     document.getElementById("section-card")
     .scrollBy({
         left:400,
@@ -53,6 +94,7 @@ document.getElementById("explorebtn").addEventListener("click",function (e){
     
 });
 
+// for left and right scroll button for the rating box
 // let stories=document.getElementById("stories");
 
 // setInterval(function(){
@@ -85,6 +127,7 @@ document.getElementById("explorebtn").addEventListener("click",function (e){
 //     }
 // },2000);
 
+// this code is used to make the cards auto scroll without scrolling 
 function animate(){
     let cards=document.getElementById("section-card");
     cards.scrollLeft+=1;
@@ -101,6 +144,6 @@ function slide(){
     if(stories.scrollLeft>=stories.scrollWidth/2){
         stories.scrollLeft=0;
     }
-    requestAnimationFrame(slide);
+    requestAnimationFrame(slide);       //this is used to move the cards without waiting 
 }
-slide();
+slide();    
