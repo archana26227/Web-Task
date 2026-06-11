@@ -1,5 +1,62 @@
-.btn-success{
-    align-items: center;
-    padding:10px 20px 10px 20px;
-    margin-left:40%;
+body.dark-mode{
+    background-color: #0F172A;
+    color:white;
+}
+
+/* section 2 */
+body.dark-mode .service{
+    background-color: #1E293B;
+}
+body.dark-mode .services{
+    background-color: #334155;
+}
+body.dark-mode .services2{
+    background-color: #334155;
+}
+body.dark-mode .services-part2{
+    background-color:#334155;
+}
+
+/* section 3 */
+body.dark-mode .section3{
+    background-color: #0F172A;
+}
+body.dark-mode .card{
+    background-color: #334155;
+    color:white;
+}
+
+/* section 4 */
+body.dark-mode .stories{
+    background-color: #1E293B;
+}
+body.dark-mode .profile{
+    background-color: #334155;
+}
+body.dark-mode #large{
+    color:white;
+}
+body.dark-mode #small{
+    color:white;
+}
+body.dark-mode .view{
+    color:white;
+}
+
+/* contact section 5 */
+body.dark-mode .form-section{
+    background-color: #334155;
+    color:white;
+}
+
+/* section 6 */
+body.dark-mode .footer-wrapper{
+    background-color:#1E293B ;
+}
+
+/* others tag */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3{
+    color: white;
 }

@@ -1,5 +1,6 @@
 body{
     background-color: #F9F9FF;
+    transition: 0.3s;
 }
 .heading1{
     position:fixed;
