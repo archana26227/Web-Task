@@ -1,11 +1,21 @@
 body.dark-mode{
-    background-color: #0F172A;
-    color:white;
+    background:linear-gradient(to right, #0F172A,
+    #164859);
+    color:#CBD5E1;
 }
-
+/* navbar */
+body.dark-mode .navbar{
+   background:linear-gradient(to right, #0F172A,
+    #164859)!important;
+    color:#CBD5E1 !important;
+    border-bottom:2px solid #48576c;
+}
+body.dark-mode .nav-link{
+    color:#CBD5E1;
+}
 /* section 2 */
 body.dark-mode .service{
-    background-color: #1E293B;
+    background-color: #113741;
 }
 body.dark-mode .services{
     background-color: #334155;
@@ -19,44 +29,50 @@ body.dark-mode .services-part2{
 
 /* section 3 */
 body.dark-mode .section3{
-    background-color: #0F172A;
+   background:linear-gradient(to right, #0F172A,
+    #164859);
 }
 body.dark-mode .card{
-    background-color: #334155;
-    color:white;
+    background-color: #1E293B;
+    color:#CBD5E1;
+    border: 2px solid #334155;
 }
 
 /* section 4 */
 body.dark-mode .stories{
-    background-color: #1E293B;
+    background-color: #113741;
 }
 body.dark-mode .profile{
     background-color: #334155;
 }
 body.dark-mode #large{
-    color:white;
+    color:#F8FAFC;
 }
 body.dark-mode #small{
-    color:white;
+    color:#CBD5E1;
 }
 body.dark-mode .view{
-    color:white;
+    color:#CBD5E1;
 }
 
 /* contact section 5 */
 body.dark-mode .form-section{
     background-color: #334155;
-    color:white;
+    color:#CBD5E1;
 }
 
 /* section 6 */
 body.dark-mode .footer-wrapper{
-    background-color:#1E293B ;
+    background-color:#113741;
 }
 
 /* others tag */
 body.dark-mode h1,
 body.dark-mode h2,
-body.dark-mode h3{
-    color: white;
+body.dark-mode h3,
+body.dark-mode h4{
+    color:#F8FAFC;
+}
+body.dark-mode p{
+    color:#CBD5E1;
 }

@@ -22,6 +22,10 @@ body{
 .nav-link:active{
     color: #006b54;
 }
+.themeToggle{
+    margin-top:10px;
+    margin-right:10px;
+}
 #head{
     color: #006b54;
     font-weight: 550;
